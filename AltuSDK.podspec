@@ -12,7 +12,8 @@ Pod::Spec.new do |spec|
       :type => 'MIT',
       :file => 'LICENSE' 
     }
-    spec.homepage     = 'https://github.com/Altu1/altu-sdk-ios'
+    spec.homepage     = 'https://github.com/Altu1/sdk-altu-ios'
+    spec.documentation_url = 'https://github.com/Altu1/sdk-altu-ios/blob/main/README.md'
     spec.source       = { 
       :path => '~/Users/ricardocaldeira/altu-sdk-ios/AltuSDK/AltuSDK.xcodeproj',
       :branch => 'master',
