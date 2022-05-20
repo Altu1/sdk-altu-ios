@@ -6,7 +6,8 @@ Pod::Spec.new do |spec|
     spec.version      = '0.1.0'
     spec.requires_arc = true
     spec.authors      = { 
-      'Ricardo Caldeira' => 'ricardo.caldeira@rethink.dev'
+      'Ricardo Caldeira' => 'ricardo.caldeira@rethink.dev',
+      'DirectOne' => 'pushsdk@d1.cx'
     }
     spec.license      = { 
       :type => 'MIT',
@@ -15,8 +16,8 @@ Pod::Spec.new do |spec|
     spec.homepage     = 'https://github.com/Altu1/sdk-altu-ios'
     spec.documentation_url = 'https://github.com/Altu1/sdk-altu-ios/blob/main/README.md'
     spec.source       = { 
-      :path => '~/Users/ricardocaldeira/altu-sdk-ios/AltuSDK/AltuSDK.xcodeproj',
-      :branch => 'master',
+      :path => 'https://github.com/Altu1/sdk-altu-ios',
+      :branch => 'main',
       :tag => spec.version.to_s 
     }
     spec.summary      = 'AltuSDK'
