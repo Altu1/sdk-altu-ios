@@ -1,0 +1,6 @@
+framework module AltuSDK {
+  umbrella header "AltuSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

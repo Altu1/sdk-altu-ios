@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5127AC5E27ECEC5D00B2B762 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5127AC5D27ECEC5D00B2B762 /* AppDelegate.swift */; };
+		5127AC6227ECEC5D00B2B762 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5127AC6127ECEC5D00B2B762 /* ViewController.swift */; };
+		5127AC6527ECEC5D00B2B762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5127AC6327ECEC5D00B2B762 /* Main.storyboard */; };
+		5127AC6727ECEC5E00B2B762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5127AC6627ECEC5E00B2B762 /* Assets.xcassets */; };
+		5127AC6A27ECEC5E00B2B762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5127AC6827ECEC5E00B2B762 /* LaunchScreen.storyboard */; };
+		514125C9283519EC00D6FDC5 /* D1_AltuSDK_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514125C8283519EC00D6FDC5 /* D1_AltuSDK_SampleTests.swift */; };
+		5175982E2835987900E51D1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5175982D2835987900E51D1E /* GoogleService-Info.plist */; };
+		739DE72198FAA8AD01B909D8 /* Pods_D1_AltuSDK_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1B2EEDCFA47F4D75BB15B /* Pods_D1_AltuSDK_Sample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		514125CA283519EC00D6FDC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5127AC5227ECEC5D00B2B762 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5127AC5927ECEC5D00B2B762;
+			remoteInfo = "D1 AltuSDK Sample";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5127AC5A27ECEC5D00B2B762 /* D1 AltuSDK Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D1 AltuSDK Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5127AC5D27ECEC5D00B2B762 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5127AC6127ECEC5D00B2B762 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5127AC6427ECEC5D00B2B762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5127AC6627ECEC5E00B2B762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5127AC6927ECEC5E00B2B762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5127AC6B27ECEC5E00B2B762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		514125C6283519EC00D6FDC5 /* D1 AltuSDK SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "D1 AltuSDK SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		514125C8283519EC00D6FDC5 /* D1_AltuSDK_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D1_AltuSDK_SampleTests.swift; sourceTree = "<group>"; };
+		5175982D2835987900E51D1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		51FF14BC282984570023C834 /* D1 AltuSDK Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "D1 AltuSDK Sample.entitlements"; sourceTree = "<group>"; };
+		591BD7AF4D85E73746769111 /* Pods-D1 AltuSDK Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-D1 AltuSDK Sample.debug.xcconfig"; path = "Target Support Files/Pods-D1 AltuSDK Sample/Pods-D1 AltuSDK Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		674D2DDE10A51406AE095648 /* Pods-D1 AltuSDK Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-D1 AltuSDK Sample.release.xcconfig"; path = "Target Support Files/Pods-D1 AltuSDK Sample/Pods-D1 AltuSDK Sample.release.xcconfig"; sourceTree = "<group>"; };
+		84C1B2EEDCFA47F4D75BB15B /* Pods_D1_AltuSDK_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_D1_AltuSDK_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5127AC5727ECEC5D00B2B762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739DE72198FAA8AD01B909D8 /* Pods_D1_AltuSDK_Sample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514125C3283519EC00D6FDC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5127AC5127ECEC5D00B2B762 = {
+			isa = PBXGroup;
+			children = (
+				5127AC5C27ECEC5D00B2B762 /* D1 AltuSDK Sample */,
+				514125C7283519EC00D6FDC5 /* D1 AltuSDK SampleTests */,
+				5127AC5B27ECEC5D00B2B762 /* Products */,
+				DEC92F57F02D58B908247AAD /* Pods */,
+				C867B08D9590D4F2E658C61B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5127AC5B27ECEC5D00B2B762 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5127AC5A27ECEC5D00B2B762 /* D1 AltuSDK Sample.app */,
+				514125C6283519EC00D6FDC5 /* D1 AltuSDK SampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5127AC5C27ECEC5D00B2B762 /* D1 AltuSDK Sample */ = {
+			isa = PBXGroup;
+			children = (
+				51FF14BC282984570023C834 /* D1 AltuSDK Sample.entitlements */,
+				5127AC5D27ECEC5D00B2B762 /* AppDelegate.swift */,
+				5127AC6127ECEC5D00B2B762 /* ViewController.swift */,
+				5127AC6327ECEC5D00B2B762 /* Main.storyboard */,
+				5127AC6627ECEC5E00B2B762 /* Assets.xcassets */,
+				5127AC6827ECEC5E00B2B762 /* LaunchScreen.storyboard */,
+				5127AC6B27ECEC5E00B2B762 /* Info.plist */,
+				5175982D2835987900E51D1E /* GoogleService-Info.plist */,
+			);
+			path = "D1 AltuSDK Sample";
+			sourceTree = "<group>";
+		};
+		514125C7283519EC00D6FDC5 /* D1 AltuSDK SampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				514125C8283519EC00D6FDC5 /* D1_AltuSDK_SampleTests.swift */,
+			);
+			path = "D1 AltuSDK SampleTests";
+			sourceTree = "<group>";
+		};
+		C867B08D9590D4F2E658C61B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84C1B2EEDCFA47F4D75BB15B /* Pods_D1_AltuSDK_Sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEC92F57F02D58B908247AAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				591BD7AF4D85E73746769111 /* Pods-D1 AltuSDK Sample.debug.xcconfig */,
+				674D2DDE10A51406AE095648 /* Pods-D1 AltuSDK Sample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5127AC5927ECEC5D00B2B762 /* D1 AltuSDK Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5127AC6E27ECEC5E00B2B762 /* Build configuration list for PBXNativeTarget "D1 AltuSDK Sample" */;
+			buildPhases = (
+				0EB0034961174BFB99FEC45F /* [CP] Check Pods Manifest.lock */,
+				5127AC5627ECEC5D00B2B762 /* Sources */,
+				5127AC5727ECEC5D00B2B762 /* Frameworks */,
+				5127AC5827ECEC5D00B2B762 /* Resources */,
+				54470BB8EDBA3251CEEF789C /* [CP] Embed Pods Frameworks */,
+				5175982F283598A400E51D1E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "D1 AltuSDK Sample";
+			productName = "D1 AltuSDK Sample";
+			productReference = 5127AC5A27ECEC5D00B2B762 /* D1 AltuSDK Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		514125C5283519EC00D6FDC5 /* D1 AltuSDK SampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 514125CE283519EC00D6FDC5 /* Build configuration list for PBXNativeTarget "D1 AltuSDK SampleTests" */;
+			buildPhases = (
+				514125C2283519EC00D6FDC5 /* Sources */,
+				514125C3283519EC00D6FDC5 /* Frameworks */,
+				514125C4283519EC00D6FDC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				514125CB283519EC00D6FDC5 /* PBXTargetDependency */,
+			);
+			name = "D1 AltuSDK SampleTests";
+			productName = "D1 AltuSDK SampleTests";
+			productReference = 514125C6283519EC00D6FDC5 /* D1 AltuSDK SampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5127AC5227ECEC5D00B2B762 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					5127AC5927ECEC5D00B2B762 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					514125C5283519EC00D6FDC5 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 5127AC5927ECEC5D00B2B762;
+					};
+				};
+			};
+			buildConfigurationList = 5127AC5527ECEC5D00B2B762 /* Build configuration list for PBXProject "D1 AltuSDK Sample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5127AC5127ECEC5D00B2B762;
+			productRefGroup = 5127AC5B27ECEC5D00B2B762 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5127AC5927ECEC5D00B2B762 /* D1 AltuSDK Sample */,
+				514125C5283519EC00D6FDC5 /* D1 AltuSDK SampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5127AC5827ECEC5D00B2B762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5127AC6A27ECEC5E00B2B762 /* LaunchScreen.storyboard in Resources */,
+				5175982E2835987900E51D1E /* GoogleService-Info.plist in Resources */,
+				5127AC6727ECEC5E00B2B762 /* Assets.xcassets in Resources */,
+				5127AC6527ECEC5D00B2B762 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514125C4283519EC00D6FDC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EB0034961174BFB99FEC45F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-D1 AltuSDK Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5175982F283598A400E51D1E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n\n";
+		};
+		54470BB8EDBA3251CEEF789C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-D1 AltuSDK Sample/Pods-D1 AltuSDK Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-D1 AltuSDK Sample/Pods-D1 AltuSDK Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-D1 AltuSDK Sample/Pods-D1 AltuSDK Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5127AC5627ECEC5D00B2B762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5127AC6227ECEC5D00B2B762 /* ViewController.swift in Sources */,
+				5127AC5E27ECEC5D00B2B762 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514125C2283519EC00D6FDC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514125C9283519EC00D6FDC5 /* D1_AltuSDK_SampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		514125CB283519EC00D6FDC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5127AC5927ECEC5D00B2B762 /* D1 AltuSDK Sample */;
+			targetProxy = 514125CA283519EC00D6FDC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5127AC6327ECEC5D00B2B762 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5127AC6427ECEC5D00B2B762 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5127AC6827ECEC5E00B2B762 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5127AC6927ECEC5E00B2B762 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5127AC6C27ECEC5E00B2B762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5127AC6D27ECEC5E00B2B762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5127AC6F27ECEC5E00B2B762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 591BD7AF4D85E73746769111 /* Pods-D1 AltuSDK Sample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "D1 AltuSDK Sample/D1 AltuSDK Sample.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "D1 AltuSDK Sample/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "D1 AltuSDK Sample";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.d1.D1-AltuSDK-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5127AC7027ECEC5E00B2B762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 674D2DDE10A51406AE095648 /* Pods-D1 AltuSDK Sample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "D1 AltuSDK Sample/D1 AltuSDK Sample.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "D1 AltuSDK Sample/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "D1 AltuSDK Sample";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.d1.D1-AltuSDK-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		514125CC283519EC00D6FDC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.d1.D1-AltuSDK-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/D1 AltuSDK Sample.app/D1 AltuSDK Sample";
+			};
+			name = Debug;
+		};
+		514125CD283519EC00D6FDC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.d1.D1-AltuSDK-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/D1 AltuSDK Sample.app/D1 AltuSDK Sample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5127AC5527ECEC5D00B2B762 /* Build configuration list for PBXProject "D1 AltuSDK Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5127AC6C27ECEC5E00B2B762 /* Debug */,
+				5127AC6D27ECEC5E00B2B762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5127AC6E27ECEC5E00B2B762 /* Build configuration list for PBXNativeTarget "D1 AltuSDK Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5127AC6F27ECEC5E00B2B762 /* Debug */,
+				5127AC7027ECEC5E00B2B762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		514125CE283519EC00D6FDC5 /* Build configuration list for PBXNativeTarget "D1 AltuSDK SampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				514125CC283519EC00D6FDC5 /* Debug */,
+				514125CD283519EC00D6FDC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5127AC5227ECEC5D00B2B762 /* Project object */;
+}

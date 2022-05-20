@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27D3B9E1E565DE4D4C7530419004B983 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4CDA45DA5E98E09D8CDD6069D1B802E7 /* Pods-AltuSDK-AltuSDKTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE512A82B54B44CF13C0FF53D21866 /* Pods-AltuSDK-AltuSDKTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5724D312E24BAF53F55FA723402DB8 /* Pods-AltuSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD0B294BA3B3DE4B3B8F8ADD925D68C /* Pods-AltuSDK-dummy.m */; };
+		D4A4538E7252CCB7D7C7D0235713104A /* Pods-AltuSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A6C3579B6C443F53264E7B57E11B75 /* Pods-AltuSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D86654553F00FFEA1AADF7A53C0B05DD /* Pods-AltuSDK-AltuSDKTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 724F10550CE335D8E1AE5C3440860B7E /* Pods-AltuSDK-AltuSDKTests-dummy.m */; };
+		D99BF9C5D2BC65B23167423D28CC58AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06CE9B76F1D815DD5F20B0D135B8059C /* Pods-AltuSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AltuSDK"; path = Pods_AltuSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08221845DF9DE54EB3AC57F4AAC6F78F /* Pods-AltuSDK-AltuSDKTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AltuSDK-AltuSDKTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		13AE848FBFB2B899CA0696AC349EC93E /* Pods-AltuSDK-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AltuSDK-acknowledgements.markdown"; sourceTree = "<group>"; };
+		23EB17791971EB0C3F337D03E186E528 /* Pods-AltuSDK-AltuSDKTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AltuSDK-AltuSDKTests"; path = Pods_AltuSDK_AltuSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FCE512A82B54B44CF13C0FF53D21866 /* Pods-AltuSDK-AltuSDKTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AltuSDK-AltuSDKTests-umbrella.h"; sourceTree = "<group>"; };
+		36A6C3579B6C443F53264E7B57E11B75 /* Pods-AltuSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AltuSDK-umbrella.h"; sourceTree = "<group>"; };
+		5DD0B294BA3B3DE4B3B8F8ADD925D68C /* Pods-AltuSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AltuSDK-dummy.m"; sourceTree = "<group>"; };
+		635D8149CE3CF5D3EDD29C14263EEC53 /* Pods-AltuSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AltuSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		6D4C29B90E103EAD08F44E42920AAC0A /* Pods-AltuSDK-AltuSDKTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AltuSDK-AltuSDKTests.modulemap"; sourceTree = "<group>"; };
+		724F10550CE335D8E1AE5C3440860B7E /* Pods-AltuSDK-AltuSDKTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AltuSDK-AltuSDKTests-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		77549F2ADE83E76D1DDE87CBB6E13DDA /* Pods-AltuSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AltuSDK.release.xcconfig"; sourceTree = "<group>"; };
+		799F8EDFE84BF374699B3772DA3F70F3 /* Pods-AltuSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AltuSDK.modulemap"; sourceTree = "<group>"; };
+		8B84789E10D1A9D0BD1BBDB2E9F8DDCF /* Pods-AltuSDK-AltuSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AltuSDK-AltuSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AFF0C89ED91FB29B4440B9FCA2F4AE64 /* Pods-AltuSDK-AltuSDKTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AltuSDK-AltuSDKTests-Info.plist"; sourceTree = "<group>"; };
+		BA2CA3A762D12F6673652EA479BD2B7A /* Pods-AltuSDK-AltuSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AltuSDK-AltuSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC9E70F62A194508249CC64768F618DE /* Pods-AltuSDK-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AltuSDK-acknowledgements.plist"; sourceTree = "<group>"; };
+		D968D0F0C45B12595F424F8C8A9C90AE /* Pods-AltuSDK-AltuSDKTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AltuSDK-AltuSDKTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FC461078236EEC4D635F0D0DCFC02255 /* Pods-AltuSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AltuSDK-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FA943A08AB5ECA9B175E5F2F9EBDCBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D3B9E1E565DE4D4C7530419004B983 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D8920F20476131D96A13677B38CBAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99BF9C5D2BC65B23167423D28CC58AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41549AC4F79EFED041961D8CDFD9381F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6934CE1A6288E5A86D5CBDE6A7D319F /* Pods-AltuSDK */,
+				E0B003AB3A40E5F414857EB307FD2F8E /* Pods-AltuSDK-AltuSDKTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				ED8C4EF5F4895D7DDA96C165725C13E6 /* Products */,
+				41549AC4F79EFED041961D8CDFD9381F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0B003AB3A40E5F414857EB307FD2F8E /* Pods-AltuSDK-AltuSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D4C29B90E103EAD08F44E42920AAC0A /* Pods-AltuSDK-AltuSDKTests.modulemap */,
+				08221845DF9DE54EB3AC57F4AAC6F78F /* Pods-AltuSDK-AltuSDKTests-acknowledgements.markdown */,
+				D968D0F0C45B12595F424F8C8A9C90AE /* Pods-AltuSDK-AltuSDKTests-acknowledgements.plist */,
+				724F10550CE335D8E1AE5C3440860B7E /* Pods-AltuSDK-AltuSDKTests-dummy.m */,
+				AFF0C89ED91FB29B4440B9FCA2F4AE64 /* Pods-AltuSDK-AltuSDKTests-Info.plist */,
+				2FCE512A82B54B44CF13C0FF53D21866 /* Pods-AltuSDK-AltuSDKTests-umbrella.h */,
+				BA2CA3A762D12F6673652EA479BD2B7A /* Pods-AltuSDK-AltuSDKTests.debug.xcconfig */,
+				8B84789E10D1A9D0BD1BBDB2E9F8DDCF /* Pods-AltuSDK-AltuSDKTests.release.xcconfig */,
+			);
+			name = "Pods-AltuSDK-AltuSDKTests";
+			path = "Target Support Files/Pods-AltuSDK-AltuSDKTests";
+			sourceTree = "<group>";
+		};
+		ED8C4EF5F4895D7DDA96C165725C13E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06CE9B76F1D815DD5F20B0D135B8059C /* Pods-AltuSDK */,
+				23EB17791971EB0C3F337D03E186E528 /* Pods-AltuSDK-AltuSDKTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6934CE1A6288E5A86D5CBDE6A7D319F /* Pods-AltuSDK */ = {
+			isa = PBXGroup;
+			children = (
+				799F8EDFE84BF374699B3772DA3F70F3 /* Pods-AltuSDK.modulemap */,
+				13AE848FBFB2B899CA0696AC349EC93E /* Pods-AltuSDK-acknowledgements.markdown */,
+				BC9E70F62A194508249CC64768F618DE /* Pods-AltuSDK-acknowledgements.plist */,
+				5DD0B294BA3B3DE4B3B8F8ADD925D68C /* Pods-AltuSDK-dummy.m */,
+				FC461078236EEC4D635F0D0DCFC02255 /* Pods-AltuSDK-Info.plist */,
+				36A6C3579B6C443F53264E7B57E11B75 /* Pods-AltuSDK-umbrella.h */,
+				635D8149CE3CF5D3EDD29C14263EEC53 /* Pods-AltuSDK.debug.xcconfig */,
+				77549F2ADE83E76D1DDE87CBB6E13DDA /* Pods-AltuSDK.release.xcconfig */,
+			);
+			name = "Pods-AltuSDK";
+			path = "Target Support Files/Pods-AltuSDK";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2846FEC722239D3E0FF42560AE5405FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A4538E7252CCB7D7C7D0235713104A /* Pods-AltuSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD51CC13850C1702A7E79679D3D4237 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CDA45DA5E98E09D8CDD6069D1B802E7 /* Pods-AltuSDK-AltuSDKTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3D7BE73C82ABA7D4D92C7C6D745116D3 /* Pods-AltuSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E610DDBDD1F77ED6B576D4B48C024018 /* Build configuration list for PBXNativeTarget "Pods-AltuSDK" */;
+			buildPhases = (
+				2846FEC722239D3E0FF42560AE5405FC /* Headers */,
+				808F7D02711B5C40F605A5A90BDAD17E /* Sources */,
+				A6D8920F20476131D96A13677B38CBAB /* Frameworks */,
+				364F93F327C11CFBC65CD3D5CAB114E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AltuSDK";
+			productName = Pods_AltuSDK;
+			productReference = 06CE9B76F1D815DD5F20B0D135B8059C /* Pods-AltuSDK */;
+			productType = "com.apple.product-type.framework";
+		};
+		BC88CD1148270ADEA74A0F070A3EB3A0 /* Pods-AltuSDK-AltuSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F19A1919870393B82EA9770BEED1B0A /* Build configuration list for PBXNativeTarget "Pods-AltuSDK-AltuSDKTests" */;
+			buildPhases = (
+				AAD51CC13850C1702A7E79679D3D4237 /* Headers */,
+				7282C63049AED027431DDDF0A86C368E /* Sources */,
+				3FA943A08AB5ECA9B175E5F2F9EBDCBB /* Frameworks */,
+				7BBDD3D98D6CC7FE83BF329DC06F0049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AltuSDK-AltuSDKTests";
+			productName = Pods_AltuSDK_AltuSDKTests;
+			productReference = 23EB17791971EB0C3F337D03E186E528 /* Pods-AltuSDK-AltuSDKTests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = ED8C4EF5F4895D7DDA96C165725C13E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D7BE73C82ABA7D4D92C7C6D745116D3 /* Pods-AltuSDK */,
+				BC88CD1148270ADEA74A0F070A3EB3A0 /* Pods-AltuSDK-AltuSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		364F93F327C11CFBC65CD3D5CAB114E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BBDD3D98D6CC7FE83BF329DC06F0049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7282C63049AED027431DDDF0A86C368E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86654553F00FFEA1AADF7A53C0B05DD /* Pods-AltuSDK-AltuSDKTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808F7D02711B5C40F605A5A90BDAD17E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5724D312E24BAF53F55FA723402DB8 /* Pods-AltuSDK-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		41076F20AFA6735F6CF1CC6023A5CBB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635D8149CE3CF5D3EDD29C14263EEC53 /* Pods-AltuSDK.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AltuSDK/Pods-AltuSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AltuSDK/Pods-AltuSDK.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6DAF7984DF1E96DFD1DD735F35575691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77549F2ADE83E76D1DDE87CBB6E13DDA /* Pods-AltuSDK.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AltuSDK/Pods-AltuSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AltuSDK/Pods-AltuSDK.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		80CFDF1FF3CC4E0BC9AA85DA8B4D64AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA2CA3A762D12F6673652EA479BD2B7A /* Pods-AltuSDK-AltuSDKTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AltuSDK-AltuSDKTests/Pods-AltuSDK-AltuSDKTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AltuSDK-AltuSDKTests/Pods-AltuSDK-AltuSDKTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		96A77B34D73E9B85D72145D32D090BB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B84789E10D1A9D0BD1BBDB2E9F8DDCF /* Pods-AltuSDK-AltuSDKTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AltuSDK-AltuSDKTests/Pods-AltuSDK-AltuSDKTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AltuSDK-AltuSDKTests/Pods-AltuSDK-AltuSDKTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F19A1919870393B82EA9770BEED1B0A /* Build configuration list for PBXNativeTarget "Pods-AltuSDK-AltuSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80CFDF1FF3CC4E0BC9AA85DA8B4D64AC /* Debug */,
+				96A77B34D73E9B85D72145D32D090BB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E610DDBDD1F77ED6B576D4B48C024018 /* Build configuration list for PBXNativeTarget "Pods-AltuSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41076F20AFA6735F6CF1CC6023A5CBB3 /* Debug */,
+				6DAF7984DF1E96DFD1DD735F35575691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

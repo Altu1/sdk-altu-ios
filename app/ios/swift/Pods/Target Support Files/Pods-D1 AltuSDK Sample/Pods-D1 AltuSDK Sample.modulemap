@@ -1,0 +1,6 @@
+framework module Pods_D1_AltuSDK_Sample {
+  umbrella header "Pods-D1 AltuSDK Sample-umbrella.h"
+
+  export *
+  module * { export * }
+}

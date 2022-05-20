@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChatViewController" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="ChatViewController" customModule="AltuSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bUm-pn-V19">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Pq1-nD-HcB"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SQd-Jl-5zh">
+                                <rect key="frame" x="0.0" y="63" width="320" height="345"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cGm-gz-CcE" customClass="ChatTableView" customModule="AltuSDK" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="345"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="334" id="Scp-ZU-qeD"/>
+                                        </constraints>
+                                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cGm-gz-CcE" secondAttribute="bottom" id="GmQ-B4-NF7"/>
+                                    <constraint firstItem="cGm-gz-CcE" firstAttribute="top" secondItem="SQd-Jl-5zh" secondAttribute="top" id="Nai-B8-aDm"/>
+                                    <constraint firstItem="cGm-gz-CcE" firstAttribute="leading" secondItem="SQd-Jl-5zh" secondAttribute="leading" id="Spi-m6-Yeh"/>
+                                    <constraint firstAttribute="trailing" secondItem="cGm-gz-CcE" secondAttribute="trailing" id="mJ5-ZF-eu7"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ev3-Eh-g5T">
+                                <rect key="frame" x="0.0" y="62" width="320" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="irl-I9-gCW"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zIf-ra-6Pu">
+                                <rect key="frame" x="0.0" y="408" width="320" height="72"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="eik-J0-0mN"/>
+                                </constraints>
+                            </stackView>
+                            <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXH-z1-CTQ">
+                                <rect key="frame" x="0.0" y="63" width="320" height="417"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="gW0-ej-SRo">
+                                <rect key="frame" x="150" y="230" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SQd-Jl-5zh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1a7-iw-ohZ"/>
+                            <constraint firstItem="LXH-z1-CTQ" firstAttribute="top" secondItem="bUm-pn-V19" secondAttribute="bottom" constant="-1" id="1rv-r7-Rae"/>
+                            <constraint firstItem="zIf-ra-6Pu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="24o-gv-Bvr"/>
+                            <constraint firstItem="gW0-ej-SRo" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7tz-nH-HcD"/>
+                            <constraint firstItem="zIf-ra-6Pu" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="85Q-SY-nQC"/>
+                            <constraint firstItem="zIf-ra-6Pu" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="Adi-nV-kMn"/>
+                            <constraint firstItem="LXH-z1-CTQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BPg-xO-tdb"/>
+                            <constraint firstItem="SQd-Jl-5zh" firstAttribute="top" secondItem="bUm-pn-V19" secondAttribute="bottom" constant="-1" id="CLk-YD-qPG"/>
+                            <constraint firstItem="ev3-Eh-g5T" firstAttribute="top" secondItem="bUm-pn-V19" secondAttribute="bottom" constant="-2" id="FaG-Kh-LNz"/>
+                            <constraint firstItem="bUm-pn-V19" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="HbP-4I-SIe"/>
+                            <constraint firstItem="LXH-z1-CTQ" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="HeL-bp-KsE"/>
+                            <constraint firstItem="zIf-ra-6Pu" firstAttribute="top" secondItem="SQd-Jl-5zh" secondAttribute="bottom" id="IoJ-iq-mJf"/>
+                            <constraint firstItem="LXH-z1-CTQ" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="KRM-y1-Azs"/>
+                            <constraint firstItem="gW0-ej-SRo" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="SBh-SJ-8Qe"/>
+                            <constraint firstItem="SQd-Jl-5zh" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="aXr-a2-3Ka"/>
+                            <constraint firstItem="ev3-Eh-g5T" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="dHj-Sr-0wY"/>
+                            <constraint firstItem="ev3-Eh-g5T" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="jI3-JE-cI8"/>
+                            <constraint firstItem="bUm-pn-V19" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="mDo-3l-SZR"/>
+                            <constraint firstItem="bUm-pn-V19" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zKd-Mm-CGA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chatTableView" destination="cGm-gz-CcE" id="OR4-po-x93"/>
+                        <outlet property="contentStackView" destination="SQd-Jl-5zh" id="GKc-Xu-5aa"/>
+                        <outlet property="footerStackView" destination="zIf-ra-6Pu" id="SlD-b0-Xxk"/>
+                        <outlet property="footerStackViewBottom" destination="Adi-nV-kMn" id="MpA-ae-MG9"/>
+                        <outlet property="footerStackViewHeight" destination="eik-J0-0mN" id="3Vi-FS-lwN"/>
+                        <outlet property="headerStackView" destination="bUm-pn-V19" id="YqT-fd-Ngt"/>
+                        <outlet property="loading" destination="gW0-ej-SRo" id="UWl-2Q-zcl"/>
+                        <outlet property="snackStackView" destination="ev3-Eh-g5T" id="kI1-wk-ffs"/>
+                        <outlet property="snackStackViewHeight" destination="irl-I9-gCW" id="10s-Oy-aOt"/>
+                        <outlet property="viewLoading" destination="LXH-z1-CTQ" id="hPn-SV-fWT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="67.5"/>
+        </scene>
+    </scenes>
+</document>

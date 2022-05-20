@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AltuSDK' do
+  # Pods for AltuSDK
+  # Instalar os pods apenas quando for rodar os testes unitários, mas não comitar o SDK com os pods instalados
+  use_frameworks!
+  # pod 'Starscream'
+
+	  target 'AltuSDKTests' do
+      # Pods for AltuSDKTests
+      # Instalar os pods apenas quando for rodar os testes unitários, mas não comitar o SDK com os pods instalados
+      # pod 'Starscream'
+	  end
+end
+
+
+
+
+
