@@ -1,0 +1,51 @@
+{
+  "name": "AltuSDK",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "version": "0.1.0",
+  "requires_arc": true,
+  "authors": {
+    "Ricardo Caldeira": "ricardo.caldeira@rethink.dev"
+  },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "homepage": "https://github.com/Altu1/altu-sdk-ios",
+  "source": {
+    "path": "~/Users/ricardocaldeira/altu-sdk-ios/AltuSDK/AltuSDK.xcodeproj",
+    "branch": "master",
+    "tag": "0.1.0"
+  },
+  "summary": "AltuSDK",
+  "source_files": [
+    "AltuSDK/**/*.swift",
+    "*.swift",
+    "*.objc",
+    "AltuSDK/**/*.{h,m}"
+  ],
+  "frameworks": [
+    "Foundation",
+    "XCTest",
+    "UserNotifications",
+    "SystemConfiguration",
+    "UIKit"
+  ],
+  "dependencies": {
+    "Starscream": [
+      "~> 4.0.4"
+    ]
+  },
+  "resources": "AltuSDK/**/*.{png,jpeg,jpg,pdf,storyboard,xib,xcassets,lproj,json,imageset}",
+  "resource_bundles": {
+    "AltuSDK": [
+      "AltuSDK/**/*.{png,jpeg,jpg,pdf,storyboard,xib,xcassets,lproj,json,imageset}"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "$(inherited) \"$(PLATFORM_DIR)/Developer/Library/Frameworks\""
+  },
+  "swift_version": "5.0"
+}

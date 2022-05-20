@@ -1,0 +1,1190 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E510CCD78B12F690F7D82AC /* Pods_AltuSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24FA77353729A618B81FC1E2 /* Pods_AltuSDK.framework */; };
+		5106BF0D27F340CE00E0B941 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5106BF0C27F340CE00E0B941 /* UIStackViewExtension.swift */; };
+		5123396D281F546600A3AAE8 /* SnackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123396C281F546600A3AAE8 /* SnackViewTests.swift */; };
+		5124BD9228088F5E00019691 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5124BD9128088F5E00019691 /* NetworkService.swift */; };
+		5124BD952808934600019691 /* NetworkServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5124BD942808934600019691 /* NetworkServiceFactory.swift */; };
+		51278C7A2805F85D00038553 /* ChatSessionModelDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51278C792805F85D00038553 /* ChatSessionModelDB.swift */; };
+		512A8AB327F7776300CDC759 /* ChatMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A8AB227F7776300CDC759 /* ChatMessageModel.swift */; };
+		512F374727ECFDC400877CBE /* D1AltuSdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F374627ECFDC400877CBE /* D1AltuSdk.swift */; };
+		512F374A27ECFEA700877CBE /* D1AltuSdkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F374927ECFEA700877CBE /* D1AltuSdkConfig.swift */; };
+		512F374C27ECFFBE00877CBE /* ConstantsAltu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F374B27ECFFBE00877CBE /* ConstantsAltu.swift */; };
+		512F374F27ED056F00877CBE /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F374E27ED056F00877CBE /* DBManager.swift */; };
+		512F375527ED0ED000877CBE /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F375427ED0ED000877CBE /* Backup.swift */; };
+		512F375727ED0EE400877CBE /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F375627ED0EE400877CBE /* Blob.swift */; };
+		512F375927ED0EED00877CBE /* ConnectionSQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F375827ED0EED00877CBE /* ConnectionSQL.swift */; };
+		512F375B27ED0EF400877CBE /* Connection+Aggregation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F375A27ED0EF400877CBE /* Connection+Aggregation.swift */; };
+		512F375D27ED0EFC00877CBE /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F375C27ED0EFC00877CBE /* Errors.swift */; };
+		512F375F27ED0F0400877CBE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F375E27ED0F0400877CBE /* Result.swift */; };
+		512F376127ED0F0B00877CBE /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F376027ED0F0B00877CBE /* Statement.swift */; };
+		512F376327ED0F1100877CBE /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F376227ED0F1100877CBE /* Value.swift */; };
+		512F376627ED0F4500877CBE /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F376527ED0F4500877CBE /* Cipher.swift */; };
+		512F376827ED0F4B00877CBE /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F376727ED0F4B00877CBE /* FTS4.swift */; };
+		512F376A27ED0F5200877CBE /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F376927ED0F5200877CBE /* FTS5.swift */; };
+		512F376C27ED0F5900877CBE /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F376B27ED0F5900877CBE /* RTree.swift */; };
+		512F376E27ED0F7E00877CBE /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F376D27ED0F7E00877CBE /* Foundation.swift */; };
+		512F377027ED0F8500877CBE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F376F27ED0F8500877CBE /* Helpers.swift */; };
+		512F377227ED0F9000877CBE /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 512F377127ED0F9000877CBE /* SQLite.h */; };
+		512F377427ED0F9900877CBE /* SQLiteObjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 512F377327ED0F9800877CBE /* SQLiteObjc.h */; };
+		512F377827ED0FEB00877CBE /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F377727ED0FEB00877CBE /* AggregateFunctions.swift */; };
+		512F377A27ED0FF700877CBE /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F377927ED0FF700877CBE /* Coding.swift */; };
+		512F377C27ED0FFD00877CBE /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F377B27ED0FFD00877CBE /* Collation.swift */; };
+		512F377E27ED100300877CBE /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F377D27ED100300877CBE /* CoreFunctions.swift */; };
+		512F378027ED100900877CBE /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F377F27ED100900877CBE /* CustomFunctions.swift */; };
+		512F378227ED101100877CBE /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F378127ED101100877CBE /* DateAndTimeFunctions.swift */; };
+		512F378427ED101700877CBE /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F378327ED101700877CBE /* Expression.swift */; };
+		512F378627ED101E00877CBE /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F378527ED101E00877CBE /* Operators.swift */; };
+		512F378827ED102700877CBE /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F378727ED102700877CBE /* Query.swift */; };
+		512F378A27ED103600877CBE /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F378927ED103600877CBE /* Schema.swift */; };
+		512F378C27ED103D00877CBE /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F378B27ED103D00877CBE /* Setter.swift */; };
+		512F378E27ED109700877CBE /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 512F378D27ED109700877CBE /* fts3_tokenizer.h */; };
+		512F379027ED109F00877CBE /* SQLiteObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 512F378F27ED109F00877CBE /* SQLiteObjc.m */; };
+		512F379327ED10B600877CBE /* SQLiteObjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 512F379227ED10B600877CBE /* SQLiteObjc.h */; };
+		51316FE527FF8F5600D12A3E /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51316FE427FF8F5600D12A3E /* UIDeviceExtension.swift */; };
+		513B3029282AEE9F00FE908C /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B3028282AEE9F00FE908C /* BundleExtensions.swift */; };
+		513D5F7428070BA900E3AF37 /* ChatMessageModelDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513D5F7328070BA900E3AF37 /* ChatMessageModelDB.swift */; };
+		513F662E27FA37ED000EC703 /* BalloonMessageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513F662D27FA37ED000EC703 /* BalloonMessageViewCell.xib */; };
+		513F663027FA37FD000EC703 /* BalloonMessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F662F27FA37FD000EC703 /* BalloonMessageViewCell.swift */; };
+		51592C7227FF6E36009B762E /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51592C7127FF6E36009B762E /* ChatManager.swift */; };
+		515A312E2804CC48000CE08B /* String+Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515A312D2804CC48000CE08B /* String+Attributed.swift */; };
+		515B3AF127F200190004487C /* SimpleTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 515B3AF027F200190004487C /* SimpleTextViewCell.xib */; };
+		51656E7428049D04007E0D34 /* EventMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51656E7328049D04007E0D34 /* EventMessageModel.swift */; };
+		516949F827FE1A5300A56B9B /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516949F727FE1A5300A56B9B /* SocketManager.swift */; };
+		5169A82728043433007DBED6 /* EventConnectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5169A82628043433007DBED6 /* EventConnectionModel.swift */; };
+		516C57DC27F0FBA1004136E6 /* ChatHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 516C57DB27F0FBA1004136E6 /* ChatHeaderView.xib */; };
+		516C57DF27F0FFDE004136E6 /* ComponentPresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C57DE27F0FFDE004136E6 /* ComponentPresenterView.swift */; };
+		516C57E127F10129004136E6 /* ComponentPresenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C57E027F10129004136E6 /* ComponentPresenterModel.swift */; };
+		516C57E327F1017C004136E6 /* ComponentGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C57E227F1017C004136E6 /* ComponentGeneric.swift */; };
+		516C57E727F1024A004136E6 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C57E627F1024A004136E6 /* UIViewExtension.swift */; };
+		516C57E927F102E4004136E6 /* ChatHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C57E827F102E4004136E6 /* ChatHeaderView.swift */; };
+		516C57EB27F1037E004136E6 /* ChatHeaderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C57EA27F1037E004136E6 /* ChatHeaderItem.swift */; };
+		516C57EE27F105D7004136E6 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C57ED27F105D7004136E6 /* UIColorExtension.swift */; };
+		516C57F027F115A4004136E6 /* NSMutableAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C57EF27F115A4004136E6 /* NSMutableAttributedStringExtension.swift */; };
+		517CFF4727F25A0400917D1E /* SimpleTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CFF4627F25A0400917D1E /* SimpleTextViewCell.swift */; };
+		519EE764281AFBF2009548D4 /* D1AltuSdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EE763281AFBF2009548D4 /* D1AltuSdkTests.swift */; };
+		519EE767281B0AAB009548D4 /* BaseComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EE766281B0AAB009548D4 /* BaseComponentsTests.swift */; };
+		519EE76A281B1422009548D4 /* ChatHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EE769281B1422009548D4 /* ChatHeaderTests.swift */; };
+		519EE76D281B222D009548D4 /* InputMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EE76C281B222D009548D4 /* InputMessageTests.swift */; };
+		519EE772281C2A6E009548D4 /* SimpleTextViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EE771281C2A6E009548D4 /* SimpleTextViewCellTests.swift */; };
+		519EE775281C5B75009548D4 /* SeparatorViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EE774281C5B75009548D4 /* SeparatorViewCellTests.swift */; };
+		519EE778281C5E10009548D4 /* BalloonMessageViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EE777281C5E10009548D4 /* BalloonMessageViewCellTests.swift */; };
+		519EE77A281C6FBF009548D4 /* ChatManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EE779281C6FBF009548D4 /* ChatManagerTests.swift */; };
+		51A556D827F726F0009A4859 /* ChatFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A556D727F726F0009A4859 /* ChatFactory.swift */; };
+		51A556DC27F72B1C009A4859 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A556DB27F72B1C009A4859 /* ChatViewModel.swift */; };
+		51A83743281705DD00199C3C /* SeparatorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A83742281705DD00199C3C /* SeparatorViewCell.xib */; };
+		51A83745281705F400199C3C /* SeparatorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A83744281705F400199C3C /* SeparatorViewCell.swift */; };
+		51B7A17827F651A6004A0A27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B7A17727F651A6004A0A27 /* Images.xcassets */; };
+		51C879F127FF8803000778E9 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C879F027FF8803000778E9 /* Request.swift */; };
+		51CB753A27FB6FD9008611C2 /* InputMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CB753927FB6FD9008611C2 /* InputMessageView.swift */; };
+		51CB753C27FB7029008611C2 /* InputMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51CB753B27FB7029008611C2 /* InputMessageView.xib */; };
+		51CB753E27FB707B008611C2 /* InputMessageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CB753D27FB707B008611C2 /* InputMessageItem.swift */; };
+		51D01CFA282D2BCF00A4AC8A /* ChatViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D01CF9282D2BCF00A4AC8A /* ChatViewModelTests.swift */; };
+		51D3ACA827F32A71004D3C06 /* ChatViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D3ACA727F32A71004D3C06 /* ChatViewController.storyboard */; };
+		51D3ACAA27F32A94004D3C06 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D3ACA927F32A94004D3C06 /* ChatViewController.swift */; };
+		51DCF0F027ECF323009EDC03 /* AltuSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 51DCF0EF27ECF323009EDC03 /* AltuSDK.docc */; };
+		51DCF0F627ECF323009EDC03 /* AltuSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DCF0EB27ECF322009EDC03 /* AltuSDK.framework */; };
+		51DCF0FC27ECF323009EDC03 /* AltuSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 51DCF0EE27ECF322009EDC03 /* AltuSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51E29E1A281F3F3B00F9EEA5 /* SnackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E29E19281F3F3B00F9EEA5 /* SnackView.xib */; };
+		51E29E1C281F3F7D00F9EEA5 /* SnackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E29E1B281F3F7D00F9EEA5 /* SnackView.swift */; };
+		51E29E1E281F3F8F00F9EEA5 /* SnackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E29E1D281F3F8F00F9EEA5 /* SnackItem.swift */; };
+		51E45B7C28045BC700555963 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E45B7B28045BC700555963 /* DataModel.swift */; };
+		51FA6105280DE05800916EDC /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA6104280DE05800916EDC /* NSDateExtension.swift */; };
+		51FA8F11281E9E5C008B4433 /* EventMessageModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA8F10281E9E5C008B4433 /* EventMessageModelMock.swift */; };
+		7587E1A17F04F31F1C17C7ED /* Pods_AltuSDK_AltuSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643A394C9E9B905A1BBF9676 /* Pods_AltuSDK_AltuSDKTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51DCF0F727ECF323009EDC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51DCF0E227ECF322009EDC03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51DCF0EA27ECF322009EDC03;
+			remoteInfo = AltuSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24FA77353729A618B81FC1E2 /* Pods_AltuSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AltuSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CE616435B728D94E032B0C /* Pods-AltuSDK-AltuSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltuSDK-AltuSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-AltuSDK-AltuSDKTests/Pods-AltuSDK-AltuSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5106BF0C27F340CE00E0B941 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
+		5123396C281F546600A3AAE8 /* SnackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackViewTests.swift; sourceTree = "<group>"; };
+		5124BD9128088F5E00019691 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		5124BD942808934600019691 /* NetworkServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceFactory.swift; sourceTree = "<group>"; };
+		51278C792805F85D00038553 /* ChatSessionModelDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatSessionModelDB.swift; path = AltuSDK/Core/DBManager/Model/ChatSessionModelDB.swift; sourceTree = SOURCE_ROOT; };
+		512A8AB227F7776300CDC759 /* ChatMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageModel.swift; sourceTree = "<group>"; };
+		512F374627ECFDC400877CBE /* D1AltuSdk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D1AltuSdk.swift; sourceTree = "<group>"; };
+		512F374927ECFEA700877CBE /* D1AltuSdkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D1AltuSdkConfig.swift; sourceTree = "<group>"; };
+		512F374B27ECFFBE00877CBE /* ConstantsAltu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsAltu.swift; sourceTree = "<group>"; };
+		512F374E27ED056F00877CBE /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		512F375427ED0ED000877CBE /* Backup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
+		512F375627ED0EE400877CBE /* Blob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blob.swift; sourceTree = "<group>"; };
+		512F375827ED0EED00877CBE /* ConnectionSQL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionSQL.swift; sourceTree = "<group>"; };
+		512F375A27ED0EF400877CBE /* Connection+Aggregation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+Aggregation.swift"; sourceTree = "<group>"; };
+		512F375C27ED0EFC00877CBE /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		512F375E27ED0F0400877CBE /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		512F376027ED0F0B00877CBE /* Statement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		512F376227ED0F1100877CBE /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		512F376527ED0F4500877CBE /* Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cipher.swift; sourceTree = "<group>"; };
+		512F376727ED0F4B00877CBE /* FTS4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTS4.swift; sourceTree = "<group>"; };
+		512F376927ED0F5200877CBE /* FTS5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTS5.swift; sourceTree = "<group>"; };
+		512F376B27ED0F5900877CBE /* RTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTree.swift; sourceTree = "<group>"; };
+		512F376D27ED0F7E00877CBE /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
+		512F376F27ED0F8500877CBE /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		512F377127ED0F9000877CBE /* SQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLite.h; sourceTree = "<group>"; };
+		512F377327ED0F9800877CBE /* SQLiteObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteObjc.h; sourceTree = "<group>"; };
+		512F377727ED0FEB00877CBE /* AggregateFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateFunctions.swift; sourceTree = "<group>"; };
+		512F377927ED0FF700877CBE /* Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coding.swift; sourceTree = "<group>"; };
+		512F377B27ED0FFD00877CBE /* Collation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collation.swift; sourceTree = "<group>"; };
+		512F377D27ED100300877CBE /* CoreFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreFunctions.swift; sourceTree = "<group>"; };
+		512F377F27ED100900877CBE /* CustomFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFunctions.swift; sourceTree = "<group>"; };
+		512F378127ED101100877CBE /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateAndTimeFunctions.swift; sourceTree = "<group>"; };
+		512F378327ED101700877CBE /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		512F378527ED101E00877CBE /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		512F378727ED102700877CBE /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		512F378927ED103600877CBE /* Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
+		512F378B27ED103D00877CBE /* Setter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setter.swift; sourceTree = "<group>"; };
+		512F378D27ED109700877CBE /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
+		512F378F27ED109F00877CBE /* SQLiteObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteObjc.m; sourceTree = "<group>"; };
+		512F379227ED10B600877CBE /* SQLiteObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteObjc.h; sourceTree = "<group>"; };
+		51316FE427FF8F5600D12A3E /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		513B3028282AEE9F00FE908C /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
+		513D5F7328070BA900E3AF37 /* ChatMessageModelDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatMessageModelDB.swift; path = AltuSDK/Core/DBManager/Model/ChatMessageModelDB.swift; sourceTree = SOURCE_ROOT; };
+		513F662D27FA37ED000EC703 /* BalloonMessageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalloonMessageViewCell.xib; sourceTree = "<group>"; };
+		513F662F27FA37FD000EC703 /* BalloonMessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMessageViewCell.swift; sourceTree = "<group>"; };
+		51592C7127FF6E36009B762E /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		515A312D2804CC48000CE08B /* String+Attributed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Attributed.swift"; sourceTree = "<group>"; };
+		515B3AF027F200190004487C /* SimpleTextViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTextViewCell.xib; sourceTree = "<group>"; };
+		51656E7328049D04007E0D34 /* EventMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMessageModel.swift; sourceTree = "<group>"; };
+		516949F727FE1A5300A56B9B /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		5169A82628043433007DBED6 /* EventConnectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventConnectionModel.swift; sourceTree = "<group>"; };
+		516C57DB27F0FBA1004136E6 /* ChatHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatHeaderView.xib; sourceTree = "<group>"; };
+		516C57DE27F0FFDE004136E6 /* ComponentPresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentPresenterView.swift; sourceTree = "<group>"; };
+		516C57E027F10129004136E6 /* ComponentPresenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentPresenterModel.swift; sourceTree = "<group>"; };
+		516C57E227F1017C004136E6 /* ComponentGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentGeneric.swift; sourceTree = "<group>"; };
+		516C57E627F1024A004136E6 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		516C57E827F102E4004136E6 /* ChatHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeaderView.swift; sourceTree = "<group>"; };
+		516C57EA27F1037E004136E6 /* ChatHeaderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeaderItem.swift; sourceTree = "<group>"; };
+		516C57ED27F105D7004136E6 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		516C57EF27F115A4004136E6 /* NSMutableAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedStringExtension.swift; sourceTree = "<group>"; };
+		517CFF4627F25A0400917D1E /* SimpleTextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextViewCell.swift; sourceTree = "<group>"; };
+		519EE763281AFBF2009548D4 /* D1AltuSdkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D1AltuSdkTests.swift; sourceTree = "<group>"; };
+		519EE766281B0AAB009548D4 /* BaseComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseComponentsTests.swift; sourceTree = "<group>"; };
+		519EE769281B1422009548D4 /* ChatHeaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeaderTests.swift; sourceTree = "<group>"; };
+		519EE76C281B222D009548D4 /* InputMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMessageTests.swift; sourceTree = "<group>"; };
+		519EE771281C2A6E009548D4 /* SimpleTextViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextViewCellTests.swift; sourceTree = "<group>"; };
+		519EE774281C5B75009548D4 /* SeparatorViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorViewCellTests.swift; sourceTree = "<group>"; };
+		519EE777281C5E10009548D4 /* BalloonMessageViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMessageViewCellTests.swift; sourceTree = "<group>"; };
+		519EE779281C6FBF009548D4 /* ChatManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManagerTests.swift; sourceTree = "<group>"; };
+		51A556D727F726F0009A4859 /* ChatFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFactory.swift; sourceTree = "<group>"; };
+		51A556DB27F72B1C009A4859 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		51A83742281705DD00199C3C /* SeparatorViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeparatorViewCell.xib; sourceTree = "<group>"; };
+		51A83744281705F400199C3C /* SeparatorViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorViewCell.swift; sourceTree = "<group>"; };
+		51B7A17727F651A6004A0A27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		51C879F027FF8803000778E9 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		51CB753927FB6FD9008611C2 /* InputMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMessageView.swift; sourceTree = "<group>"; };
+		51CB753B27FB7029008611C2 /* InputMessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputMessageView.xib; sourceTree = "<group>"; };
+		51CB753D27FB707B008611C2 /* InputMessageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMessageItem.swift; sourceTree = "<group>"; };
+		51D01CF9282D2BCF00A4AC8A /* ChatViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModelTests.swift; sourceTree = "<group>"; };
+		51D3ACA727F32A71004D3C06 /* ChatViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ChatViewController.storyboard; path = AltuSDK/UI/Chat/ChatViewController.storyboard; sourceTree = SOURCE_ROOT; };
+		51D3ACA927F32A94004D3C06 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = AltuSDK/UI/Chat/ChatViewController.swift; sourceTree = SOURCE_ROOT; };
+		51DCF0EB27ECF322009EDC03 /* AltuSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AltuSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DCF0EE27ECF322009EDC03 /* AltuSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AltuSDK.h; sourceTree = "<group>"; };
+		51DCF0EF27ECF323009EDC03 /* AltuSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AltuSDK.docc; sourceTree = "<group>"; };
+		51DCF0F527ECF323009EDC03 /* AltuSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AltuSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E29E19281F3F3B00F9EEA5 /* SnackView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnackView.xib; sourceTree = "<group>"; };
+		51E29E1B281F3F7D00F9EEA5 /* SnackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackView.swift; sourceTree = "<group>"; };
+		51E29E1D281F3F8F00F9EEA5 /* SnackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackItem.swift; sourceTree = "<group>"; };
+		51E45B7B28045BC700555963 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		51FA6104280DE05800916EDC /* NSDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		51FA8F10281E9E5C008B4433 /* EventMessageModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMessageModelMock.swift; sourceTree = "<group>"; };
+		643A394C9E9B905A1BBF9676 /* Pods_AltuSDK_AltuSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AltuSDK_AltuSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC5320B92C0A1D2ED4E569B /* Pods-AltuSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltuSDK.debug.xcconfig"; path = "Target Support Files/Pods-AltuSDK/Pods-AltuSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		ADCE6EBD3AC52866268C5576 /* Pods-AltuSDK-AltuSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltuSDK-AltuSDKTests.release.xcconfig"; path = "Target Support Files/Pods-AltuSDK-AltuSDKTests/Pods-AltuSDK-AltuSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		F86342244B0A24FAF5372930 /* Pods-AltuSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltuSDK.release.xcconfig"; path = "Target Support Files/Pods-AltuSDK/Pods-AltuSDK.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51DCF0E827ECF322009EDC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E510CCD78B12F690F7D82AC /* Pods_AltuSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51DCF0F227ECF323009EDC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51DCF0F627ECF323009EDC03 /* AltuSDK.framework in Frameworks */,
+				7587E1A17F04F31F1C17C7ED /* Pods_AltuSDK_AltuSDKTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5123396B281F541100A3AAE8 /* SnackView */ = {
+			isa = PBXGroup;
+			children = (
+				5123396C281F546600A3AAE8 /* SnackViewTests.swift */,
+			);
+			path = SnackView;
+			sourceTree = "<group>";
+		};
+		5124BD8F28088EC500019691 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				516949F727FE1A5300A56B9B /* SocketManager.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		5124BD9028088EFC00019691 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5124BD932808932200019691 /* Factory */,
+				5124BD9128088F5E00019691 /* NetworkService.swift */,
+				51C879F027FF8803000778E9 /* Request.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5124BD932808932200019691 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				5124BD942808934600019691 /* NetworkServiceFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		512A83F628074022004B4B26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				513D5F7328070BA900E3AF37 /* ChatMessageModelDB.swift */,
+				51278C792805F85D00038553 /* ChatSessionModelDB.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		512F374827ECFE5F00877CBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				512A8AB227F7776300CDC759 /* ChatMessageModel.swift */,
+				512F374B27ECFFBE00877CBE /* ConstantsAltu.swift */,
+				512F374927ECFEA700877CBE /* D1AltuSdkConfig.swift */,
+				51E45B7B28045BC700555963 /* DataModel.swift */,
+				5169A82628043433007DBED6 /* EventConnectionModel.swift */,
+				51656E7328049D04007E0D34 /* EventMessageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		512F374D27ED053800877CBE /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				512F374E27ED056F00877CBE /* DBManager.swift */,
+				512A83F628074022004B4B26 /* Model */,
+				512F375127ED0E7300877CBE /* SQLite */,
+				512F375227ED0E9600877CBE /* SQLiteObjc */,
+			);
+			path = DBManager;
+			sourceTree = "<group>";
+		};
+		512F375127ED0E7300877CBE /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				512F375327ED0EC200877CBE /* Core */,
+				512F376427ED0F2E00877CBE /* Extensions */,
+				512F376D27ED0F7E00877CBE /* Foundation.swift */,
+				512F376F27ED0F8500877CBE /* Helpers.swift */,
+				512F377127ED0F9000877CBE /* SQLite.h */,
+				512F377327ED0F9800877CBE /* SQLiteObjc.h */,
+				512F377627ED0FCB00877CBE /* Typed */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		512F375227ED0E9600877CBE /* SQLiteObjc */ = {
+			isa = PBXGroup;
+			children = (
+				512F378D27ED109700877CBE /* fts3_tokenizer.h */,
+				512F379127ED10A900877CBE /* include */,
+				512F378F27ED109F00877CBE /* SQLiteObjc.m */,
+			);
+			path = SQLiteObjc;
+			sourceTree = "<group>";
+		};
+		512F375327ED0EC200877CBE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				512F375427ED0ED000877CBE /* Backup.swift */,
+				512F375627ED0EE400877CBE /* Blob.swift */,
+				512F375827ED0EED00877CBE /* ConnectionSQL.swift */,
+				512F375A27ED0EF400877CBE /* Connection+Aggregation.swift */,
+				512F375C27ED0EFC00877CBE /* Errors.swift */,
+				512F375E27ED0F0400877CBE /* Result.swift */,
+				512F376027ED0F0B00877CBE /* Statement.swift */,
+				512F376227ED0F1100877CBE /* Value.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		512F376427ED0F2E00877CBE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				512F376527ED0F4500877CBE /* Cipher.swift */,
+				512F376727ED0F4B00877CBE /* FTS4.swift */,
+				512F376927ED0F5200877CBE /* FTS5.swift */,
+				512F376B27ED0F5900877CBE /* RTree.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		512F377627ED0FCB00877CBE /* Typed */ = {
+			isa = PBXGroup;
+			children = (
+				512F377727ED0FEB00877CBE /* AggregateFunctions.swift */,
+				512F377927ED0FF700877CBE /* Coding.swift */,
+				512F377B27ED0FFD00877CBE /* Collation.swift */,
+				512F377D27ED100300877CBE /* CoreFunctions.swift */,
+				512F377F27ED100900877CBE /* CustomFunctions.swift */,
+				512F378127ED101100877CBE /* DateAndTimeFunctions.swift */,
+				512F378327ED101700877CBE /* Expression.swift */,
+				512F378527ED101E00877CBE /* Operators.swift */,
+				512F378727ED102700877CBE /* Query.swift */,
+				512F378927ED103600877CBE /* Schema.swift */,
+				512F378B27ED103D00877CBE /* Setter.swift */,
+			);
+			path = Typed;
+			sourceTree = "<group>";
+		};
+		512F379127ED10A900877CBE /* include */ = {
+			isa = PBXGroup;
+			children = (
+				512F379227ED10B600877CBE /* SQLiteObjc.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		513F662C27FA37CB000EC703 /* BalloonMessage */ = {
+			isa = PBXGroup;
+			children = (
+				513F662F27FA37FD000EC703 /* BalloonMessageViewCell.swift */,
+				513F662D27FA37ED000EC703 /* BalloonMessageViewCell.xib */,
+			);
+			path = BalloonMessage;
+			sourceTree = "<group>";
+		};
+		515B3AEF27F1FFD70004487C /* SimpleText */ = {
+			isa = PBXGroup;
+			children = (
+				517CFF4627F25A0400917D1E /* SimpleTextViewCell.swift */,
+				515B3AF027F200190004487C /* SimpleTextViewCell.xib */,
+			);
+			path = SimpleText;
+			sourceTree = "<group>";
+		};
+		516949F527FE19A100A56B9B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5124BD9028088EFC00019691 /* Service */,
+				5124BD8F28088EC500019691 /* Socket */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		516C57DA27F0F875004136E6 /* ChatHeader */ = {
+			isa = PBXGroup;
+			children = (
+				516C57EA27F1037E004136E6 /* ChatHeaderItem.swift */,
+				516C57E827F102E4004136E6 /* ChatHeaderView.swift */,
+				516C57DB27F0FBA1004136E6 /* ChatHeaderView.xib */,
+			);
+			path = ChatHeader;
+			sourceTree = "<group>";
+		};
+		516C57DD27F0FF8D004136E6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				516C57DE27F0FFDE004136E6 /* ComponentPresenterView.swift */,
+				516C57E027F10129004136E6 /* ComponentPresenterModel.swift */,
+				516C57E227F1017C004136E6 /* ComponentGeneric.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		516C57E427F101ED004136E6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				516C57E527F1022F004136E6 /* Extension */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		516C57E527F1022F004136E6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				51FA6104280DE05800916EDC /* NSDateExtension.swift */,
+				516C57EF27F115A4004136E6 /* NSMutableAttributedStringExtension.swift */,
+				515A312D2804CC48000CE08B /* String+Attributed.swift */,
+				516C57ED27F105D7004136E6 /* UIColorExtension.swift */,
+				51316FE427FF8F5600D12A3E /* UIDeviceExtension.swift */,
+				5106BF0C27F340CE00E0B941 /* UIStackViewExtension.swift */,
+				516C57E627F1024A004136E6 /* UIViewExtension.swift */,
+				513B3028282AEE9F00FE908C /* BundleExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5196A00C27F35514006CA8E3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				51A556D627F726A2009A4859 /* Chat */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		519EE762281AFBE6009548D4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				519EE779281C6FBF009548D4 /* ChatManagerTests.swift */,
+				519EE763281AFBF2009548D4 /* D1AltuSdkTests.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		519EE765281AFD9F009548D4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				519EE776281C5DD1009548D4 /* BalloonMessage */,
+				519EE766281B0AAB009548D4 /* BaseComponentsTests.swift */,
+				519EE768281B13FA009548D4 /* ChatHeader */,
+				519EE76B281B220A009548D4 /* InputMessage */,
+				519EE773281C5AD6009548D4 /* Separator */,
+				519EE76E281C2A30009548D4 /* SimpleText */,
+				5123396B281F541100A3AAE8 /* SnackView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		519EE768281B13FA009548D4 /* ChatHeader */ = {
+			isa = PBXGroup;
+			children = (
+				519EE769281B1422009548D4 /* ChatHeaderTests.swift */,
+			);
+			path = ChatHeader;
+			sourceTree = "<group>";
+		};
+		519EE76B281B220A009548D4 /* InputMessage */ = {
+			isa = PBXGroup;
+			children = (
+				519EE76C281B222D009548D4 /* InputMessageTests.swift */,
+			);
+			path = InputMessage;
+			sourceTree = "<group>";
+		};
+		519EE76E281C2A30009548D4 /* SimpleText */ = {
+			isa = PBXGroup;
+			children = (
+				519EE771281C2A6E009548D4 /* SimpleTextViewCellTests.swift */,
+			);
+			path = SimpleText;
+			sourceTree = "<group>";
+		};
+		519EE773281C5AD6009548D4 /* Separator */ = {
+			isa = PBXGroup;
+			children = (
+				519EE774281C5B75009548D4 /* SeparatorViewCellTests.swift */,
+			);
+			path = Separator;
+			sourceTree = "<group>";
+		};
+		519EE776281C5DD1009548D4 /* BalloonMessage */ = {
+			isa = PBXGroup;
+			children = (
+				519EE777281C5E10009548D4 /* BalloonMessageViewCellTests.swift */,
+			);
+			path = BalloonMessage;
+			sourceTree = "<group>";
+		};
+		51A556D627F726A2009A4859 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				51A556D727F726F0009A4859 /* ChatFactory.swift */,
+				51D3ACA727F32A71004D3C06 /* ChatViewController.storyboard */,
+				51D3ACA927F32A94004D3C06 /* ChatViewController.swift */,
+				51A556DB27F72B1C009A4859 /* ChatViewModel.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		51A837412817059C00199C3C /* Separator */ = {
+			isa = PBXGroup;
+			children = (
+				51A83744281705F400199C3C /* SeparatorViewCell.swift */,
+				51A83742281705DD00199C3C /* SeparatorViewCell.xib */,
+			);
+			path = Separator;
+			sourceTree = "<group>";
+		};
+		51B7A17627F65181004A0A27 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				51B7A17727F651A6004A0A27 /* Images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		51CB753427FB6C57008611C2 /* InputMessage */ = {
+			isa = PBXGroup;
+			children = (
+				51CB753D27FB707B008611C2 /* InputMessageItem.swift */,
+				51CB753927FB6FD9008611C2 /* InputMessageView.swift */,
+				51CB753B27FB7029008611C2 /* InputMessageView.xib */,
+			);
+			path = InputMessage;
+			sourceTree = "<group>";
+		};
+		51D01CF8282D2AF300A4AC8A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				51D01CF9282D2BCF00A4AC8A /* ChatViewModelTests.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		51DCF0E127ECF322009EDC03 = {
+			isa = PBXGroup;
+			children = (
+				51DCF0ED27ECF322009EDC03 /* AltuSDK */,
+				51DCF0F927ECF323009EDC03 /* AltuSDKTests */,
+				51DCF0EC27ECF322009EDC03 /* Products */,
+				90C8E4A9AE71259532B01A7A /* Pods */,
+				B7DE7674EA52289AF6D5E0CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		51DCF0EC27ECF322009EDC03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51DCF0EB27ECF322009EDC03 /* AltuSDK.framework */,
+				51DCF0F527ECF323009EDC03 /* AltuSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51DCF0ED27ECF322009EDC03 /* AltuSDK */ = {
+			isa = PBXGroup;
+			children = (
+				51DCF0EF27ECF323009EDC03 /* AltuSDK.docc */,
+				51DCF0EE27ECF322009EDC03 /* AltuSDK.h */,
+				51B7A17627F65181004A0A27 /* Assets */,
+				51DCF10627ECF3F7009EDC03 /* Components */,
+				51DCF10527ECF3F0009EDC03 /* Core */,
+				516C57E427F101ED004136E6 /* Helper */,
+				5196A00C27F35514006CA8E3 /* UI */,
+			);
+			path = AltuSDK;
+			sourceTree = "<group>";
+		};
+		51DCF0F927ECF323009EDC03 /* AltuSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				519EE765281AFD9F009548D4 /* Components */,
+				519EE762281AFBE6009548D4 /* Core */,
+				51FA8F0F281E9E38008B4433 /* ModelsMock */,
+				51D01CF8282D2AF300A4AC8A /* UI */,
+			);
+			path = AltuSDKTests;
+			sourceTree = "<group>";
+		};
+		51DCF10527ECF3F0009EDC03 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				512F374627ECFDC400877CBE /* D1AltuSdk.swift */,
+				51592C7127FF6E36009B762E /* ChatManager.swift */,
+				512F374D27ED053800877CBE /* DBManager */,
+				512F374827ECFE5F00877CBE /* Models */,
+				516949F527FE19A100A56B9B /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		51DCF10627ECF3F7009EDC03 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				51E29E18281F3F0000F9EEA5 /* SnackView */,
+				51A837412817059C00199C3C /* Separator */,
+				513F662C27FA37CB000EC703 /* BalloonMessage */,
+				516C57DD27F0FF8D004136E6 /* Base */,
+				516C57DA27F0F875004136E6 /* ChatHeader */,
+				51CB753427FB6C57008611C2 /* InputMessage */,
+				515B3AEF27F1FFD70004487C /* SimpleText */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		51E29E18281F3F0000F9EEA5 /* SnackView */ = {
+			isa = PBXGroup;
+			children = (
+				51E29E1D281F3F8F00F9EEA5 /* SnackItem.swift */,
+				51E29E1B281F3F7D00F9EEA5 /* SnackView.swift */,
+				51E29E19281F3F3B00F9EEA5 /* SnackView.xib */,
+			);
+			path = SnackView;
+			sourceTree = "<group>";
+		};
+		51FA8F0F281E9E38008B4433 /* ModelsMock */ = {
+			isa = PBXGroup;
+			children = (
+				51FA8F10281E9E5C008B4433 /* EventMessageModelMock.swift */,
+			);
+			path = ModelsMock;
+			sourceTree = "<group>";
+		};
+		90C8E4A9AE71259532B01A7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAC5320B92C0A1D2ED4E569B /* Pods-AltuSDK.debug.xcconfig */,
+				F86342244B0A24FAF5372930 /* Pods-AltuSDK.release.xcconfig */,
+				36CE616435B728D94E032B0C /* Pods-AltuSDK-AltuSDKTests.debug.xcconfig */,
+				ADCE6EBD3AC52866268C5576 /* Pods-AltuSDK-AltuSDKTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B7DE7674EA52289AF6D5E0CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24FA77353729A618B81FC1E2 /* Pods_AltuSDK.framework */,
+				643A394C9E9B905A1BBF9676 /* Pods_AltuSDK_AltuSDKTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		51DCF0E627ECF322009EDC03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512F378E27ED109700877CBE /* fts3_tokenizer.h in Headers */,
+				512F377227ED0F9000877CBE /* SQLite.h in Headers */,
+				512F379327ED10B600877CBE /* SQLiteObjc.h in Headers */,
+				512F377427ED0F9900877CBE /* SQLiteObjc.h in Headers */,
+				51DCF0FC27ECF323009EDC03 /* AltuSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		51DCF0EA27ECF322009EDC03 /* AltuSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51DCF0FF27ECF323009EDC03 /* Build configuration list for PBXNativeTarget "AltuSDK" */;
+			buildPhases = (
+				F9BABD5F334394D4A1FE776F /* [CP] Check Pods Manifest.lock */,
+				51DCF0E627ECF322009EDC03 /* Headers */,
+				51DCF0E727ECF322009EDC03 /* Sources */,
+				51DCF0E827ECF322009EDC03 /* Frameworks */,
+				51DCF0E927ECF322009EDC03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AltuSDK;
+			productName = AltuSDK;
+			productReference = 51DCF0EB27ECF322009EDC03 /* AltuSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		51DCF0F427ECF323009EDC03 /* AltuSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51DCF10227ECF323009EDC03 /* Build configuration list for PBXNativeTarget "AltuSDKTests" */;
+			buildPhases = (
+				00203EEC77FBB10D21952D7E /* [CP] Check Pods Manifest.lock */,
+				51DCF0F127ECF323009EDC03 /* Sources */,
+				51DCF0F227ECF323009EDC03 /* Frameworks */,
+				51DCF0F327ECF323009EDC03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51DCF0F827ECF323009EDC03 /* PBXTargetDependency */,
+			);
+			name = AltuSDKTests;
+			productName = AltuSDKTests;
+			productReference = 51DCF0F527ECF323009EDC03 /* AltuSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51DCF0E227ECF322009EDC03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					51DCF0EA27ECF322009EDC03 = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+					51DCF0F427ECF323009EDC03 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 51DCF0E527ECF322009EDC03 /* Build configuration list for PBXProject "AltuSDK" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 51DCF0E127ECF322009EDC03;
+			productRefGroup = 51DCF0EC27ECF322009EDC03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51DCF0EA27ECF322009EDC03 /* AltuSDK */,
+				51DCF0F427ECF323009EDC03 /* AltuSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		51DCF0E927ECF322009EDC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				513F662E27FA37ED000EC703 /* BalloonMessageViewCell.xib in Resources */,
+				51E29E1A281F3F3B00F9EEA5 /* SnackView.xib in Resources */,
+				516C57DC27F0FBA1004136E6 /* ChatHeaderView.xib in Resources */,
+				51B7A17827F651A6004A0A27 /* Images.xcassets in Resources */,
+				51D3ACA827F32A71004D3C06 /* ChatViewController.storyboard in Resources */,
+				51A83743281705DD00199C3C /* SeparatorViewCell.xib in Resources */,
+				515B3AF127F200190004487C /* SimpleTextViewCell.xib in Resources */,
+				51CB753C27FB7029008611C2 /* InputMessageView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51DCF0F327ECF323009EDC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00203EEC77FBB10D21952D7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AltuSDK-AltuSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9BABD5F334394D4A1FE776F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AltuSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51DCF0E727ECF322009EDC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512A8AB327F7776300CDC759 /* ChatMessageModel.swift in Sources */,
+				51316FE527FF8F5600D12A3E /* UIDeviceExtension.swift in Sources */,
+				51656E7428049D04007E0D34 /* EventMessageModel.swift in Sources */,
+				512F376E27ED0F7E00877CBE /* Foundation.swift in Sources */,
+				512F378227ED101100877CBE /* DateAndTimeFunctions.swift in Sources */,
+				512F378C27ED103D00877CBE /* Setter.swift in Sources */,
+				51FA6105280DE05800916EDC /* NSDateExtension.swift in Sources */,
+				512F377027ED0F8500877CBE /* Helpers.swift in Sources */,
+				51CB753E27FB707B008611C2 /* InputMessageItem.swift in Sources */,
+				512F375B27ED0EF400877CBE /* Connection+Aggregation.swift in Sources */,
+				51C879F127FF8803000778E9 /* Request.swift in Sources */,
+				51E29E1C281F3F7D00F9EEA5 /* SnackView.swift in Sources */,
+				517CFF4727F25A0400917D1E /* SimpleTextViewCell.swift in Sources */,
+				512F374F27ED056F00877CBE /* DBManager.swift in Sources */,
+				515A312E2804CC48000CE08B /* String+Attributed.swift in Sources */,
+				51278C7A2805F85D00038553 /* ChatSessionModelDB.swift in Sources */,
+				512F378027ED100900877CBE /* CustomFunctions.swift in Sources */,
+				512F376627ED0F4500877CBE /* Cipher.swift in Sources */,
+				512F377C27ED0FFD00877CBE /* Collation.swift in Sources */,
+				516949F827FE1A5300A56B9B /* SocketManager.swift in Sources */,
+				516C57E327F1017C004136E6 /* ComponentGeneric.swift in Sources */,
+				512F378827ED102700877CBE /* Query.swift in Sources */,
+				51DCF0F027ECF323009EDC03 /* AltuSDK.docc in Sources */,
+				512F376127ED0F0B00877CBE /* Statement.swift in Sources */,
+				512F375727ED0EE400877CBE /* Blob.swift in Sources */,
+				51CB753A27FB6FD9008611C2 /* InputMessageView.swift in Sources */,
+				516C57EB27F1037E004136E6 /* ChatHeaderItem.swift in Sources */,
+				512F375927ED0EED00877CBE /* ConnectionSQL.swift in Sources */,
+				512F377A27ED0FF700877CBE /* Coding.swift in Sources */,
+				51A556D827F726F0009A4859 /* ChatFactory.swift in Sources */,
+				516C57E127F10129004136E6 /* ComponentPresenterModel.swift in Sources */,
+				512F378427ED101700877CBE /* Expression.swift in Sources */,
+				512F376A27ED0F5200877CBE /* FTS5.swift in Sources */,
+				512F374727ECFDC400877CBE /* D1AltuSdk.swift in Sources */,
+				512F378A27ED103600877CBE /* Schema.swift in Sources */,
+				516C57E927F102E4004136E6 /* ChatHeaderView.swift in Sources */,
+				516C57EE27F105D7004136E6 /* UIColorExtension.swift in Sources */,
+				5106BF0D27F340CE00E0B941 /* UIStackViewExtension.swift in Sources */,
+				513F663027FA37FD000EC703 /* BalloonMessageViewCell.swift in Sources */,
+				5124BD952808934600019691 /* NetworkServiceFactory.swift in Sources */,
+				512F376C27ED0F5900877CBE /* RTree.swift in Sources */,
+				51E29E1E281F3F8F00F9EEA5 /* SnackItem.swift in Sources */,
+				51E45B7C28045BC700555963 /* DataModel.swift in Sources */,
+				5124BD9228088F5E00019691 /* NetworkService.swift in Sources */,
+				513B3029282AEE9F00FE908C /* BundleExtensions.swift in Sources */,
+				513D5F7428070BA900E3AF37 /* ChatMessageModelDB.swift in Sources */,
+				512F378627ED101E00877CBE /* Operators.swift in Sources */,
+				512F375D27ED0EFC00877CBE /* Errors.swift in Sources */,
+				512F375527ED0ED000877CBE /* Backup.swift in Sources */,
+				516C57E727F1024A004136E6 /* UIViewExtension.swift in Sources */,
+				512F374A27ECFEA700877CBE /* D1AltuSdkConfig.swift in Sources */,
+				512F376827ED0F4B00877CBE /* FTS4.swift in Sources */,
+				512F374C27ECFFBE00877CBE /* ConstantsAltu.swift in Sources */,
+				51A83745281705F400199C3C /* SeparatorViewCell.swift in Sources */,
+				51592C7227FF6E36009B762E /* ChatManager.swift in Sources */,
+				512F377E27ED100300877CBE /* CoreFunctions.swift in Sources */,
+				512F379027ED109F00877CBE /* SQLiteObjc.m in Sources */,
+				512F375F27ED0F0400877CBE /* Result.swift in Sources */,
+				516C57F027F115A4004136E6 /* NSMutableAttributedStringExtension.swift in Sources */,
+				51D3ACAA27F32A94004D3C06 /* ChatViewController.swift in Sources */,
+				516C57DF27F0FFDE004136E6 /* ComponentPresenterView.swift in Sources */,
+				512F376327ED0F1100877CBE /* Value.swift in Sources */,
+				5169A82728043433007DBED6 /* EventConnectionModel.swift in Sources */,
+				51A556DC27F72B1C009A4859 /* ChatViewModel.swift in Sources */,
+				512F377827ED0FEB00877CBE /* AggregateFunctions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51DCF0F127ECF323009EDC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				519EE767281B0AAB009548D4 /* BaseComponentsTests.swift in Sources */,
+				519EE764281AFBF2009548D4 /* D1AltuSdkTests.swift in Sources */,
+				519EE76D281B222D009548D4 /* InputMessageTests.swift in Sources */,
+				519EE778281C5E10009548D4 /* BalloonMessageViewCellTests.swift in Sources */,
+				519EE76A281B1422009548D4 /* ChatHeaderTests.swift in Sources */,
+				519EE775281C5B75009548D4 /* SeparatorViewCellTests.swift in Sources */,
+				51D01CFA282D2BCF00A4AC8A /* ChatViewModelTests.swift in Sources */,
+				519EE772281C2A6E009548D4 /* SimpleTextViewCellTests.swift in Sources */,
+				51FA8F11281E9E5C008B4433 /* EventMessageModelMock.swift in Sources */,
+				519EE77A281C6FBF009548D4 /* ChatManagerTests.swift in Sources */,
+				5123396D281F546600A3AAE8 /* SnackViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51DCF0F827ECF323009EDC03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51DCF0EA27ECF322009EDC03 /* AltuSDK */;
+			targetProxy = 51DCF0F727ECF323009EDC03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		51DCF0FD27ECF323009EDC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		51DCF0FE27ECF323009EDC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51DCF10027ECF323009EDC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAC5320B92C0A1D2ED4E569B /* Pods-AltuSDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.d1.AltuSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51DCF10127ECF323009EDC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F86342244B0A24FAF5372930 /* Pods-AltuSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.d1.AltuSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		51DCF10327ECF323009EDC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36CE616435B728D94E032B0C /* Pods-AltuSDK-AltuSDKTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.d1.AltuSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51DCF10427ECF323009EDC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADCE6EBD3AC52866268C5576 /* Pods-AltuSDK-AltuSDKTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.d1.AltuSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51DCF0E527ECF322009EDC03 /* Build configuration list for PBXProject "AltuSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51DCF0FD27ECF323009EDC03 /* Debug */,
+				51DCF0FE27ECF323009EDC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51DCF0FF27ECF323009EDC03 /* Build configuration list for PBXNativeTarget "AltuSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51DCF10027ECF323009EDC03 /* Debug */,
+				51DCF10127ECF323009EDC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51DCF10227ECF323009EDC03 /* Build configuration list for PBXNativeTarget "AltuSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51DCF10327ECF323009EDC03 /* Debug */,
+				51DCF10427ECF323009EDC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 51DCF0E227ECF322009EDC03 /* Project object */;
+}

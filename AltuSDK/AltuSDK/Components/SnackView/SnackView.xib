@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SSD-LR-UpE" customClass="SnackView" customModule="AltuSDK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7b-8c-qeE">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você está conversando com um atendente humano" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0z-h4-QJu">
+                            <rect key="frame" x="16" y="5.5" width="239" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oW-lG-KCo">
+                            <rect key="frame" x="255" y="0.0" width="65" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Sair]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6R-7A-6dj">
+                                    <rect key="frame" x="19" y="13" width="27.5" height="14"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="7gh-zb-OH4"/>
+                                <constraint firstItem="j6R-7A-6dj" firstAttribute="centerX" secondItem="1oW-lG-KCo" secondAttribute="centerX" id="gHs-rl-wRj"/>
+                                <constraint firstItem="j6R-7A-6dj" firstAttribute="centerY" secondItem="1oW-lG-KCo" secondAttribute="centerY" id="occ-b7-HBK"/>
+                                <constraint firstAttribute="width" constant="65" id="w9F-Iv-hKG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="1oW-lG-KCo" secondAttribute="trailing" id="CZf-4l-L7p"/>
+                        <constraint firstAttribute="height" constant="40" id="Iin-hg-2IR"/>
+                        <constraint firstItem="O0z-h4-QJu" firstAttribute="leading" secondItem="O7b-8c-qeE" secondAttribute="leading" constant="16" id="Lzr-GD-iCn"/>
+                        <constraint firstAttribute="bottom" secondItem="1oW-lG-KCo" secondAttribute="bottom" id="Xjl-js-ZlV"/>
+                        <constraint firstItem="O0z-h4-QJu" firstAttribute="centerY" secondItem="O7b-8c-qeE" secondAttribute="centerY" id="ffo-7S-5lN"/>
+                        <constraint firstItem="1oW-lG-KCo" firstAttribute="top" secondItem="O7b-8c-qeE" secondAttribute="top" id="n8y-l8-XaD"/>
+                        <constraint firstItem="1oW-lG-KCo" firstAttribute="leading" secondItem="O0z-h4-QJu" secondAttribute="trailing" id="ysg-Z8-why"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="djK-Kf-KSM"/>
+            <constraints>
+                <constraint firstItem="O7b-8c-qeE" firstAttribute="top" secondItem="djK-Kf-KSM" secondAttribute="top" id="7Yt-QU-dUl"/>
+                <constraint firstItem="O7b-8c-qeE" firstAttribute="bottom" secondItem="djK-Kf-KSM" secondAttribute="bottom" id="JR5-3d-kyl"/>
+                <constraint firstAttribute="trailing" secondItem="O7b-8c-qeE" secondAttribute="trailing" id="ZdJ-w6-HuN"/>
+                <constraint firstItem="O7b-8c-qeE" firstAttribute="leading" secondItem="djK-Kf-KSM" secondAttribute="leading" id="ZsV-Ia-aZK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="actionLabel" destination="j6R-7A-6dj" id="OBy-Hi-8hg"/>
+                <outlet property="actionView" destination="1oW-lG-KCo" id="QSa-Sd-mSs"/>
+                <outlet property="containerView" destination="O7b-8c-qeE" id="DrB-uA-TBe"/>
+                <outlet property="descriptionLabel" destination="O0z-h4-QJu" id="18b-3h-ulx"/>
+            </connections>
+            <point key="canvasLocation" x="-264.375" y="-202.81690140845072"/>
+        </view>
+    </objects>
+</document>
