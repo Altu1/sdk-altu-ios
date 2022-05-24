@@ -47,7 +47,6 @@
 		512F378C27ED103D00877CBE /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F378B27ED103D00877CBE /* Setter.swift */; };
 		512F378E27ED109700877CBE /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 512F378D27ED109700877CBE /* fts3_tokenizer.h */; };
 		512F379027ED109F00877CBE /* SQLiteObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 512F378F27ED109F00877CBE /* SQLiteObjc.m */; };
-		512F379327ED10B600877CBE /* SQLiteObjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 512F379227ED10B600877CBE /* SQLiteObjc.h */; };
 		51316FE527FF8F5600D12A3E /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51316FE427FF8F5600D12A3E /* UIDeviceExtension.swift */; };
 		513B3029282AEE9F00FE908C /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B3028282AEE9F00FE908C /* BundleExtensions.swift */; };
 		513D5F7428070BA900E3AF37 /* ChatMessageModelDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513D5F7328070BA900E3AF37 /* ChatMessageModelDB.swift */; };
@@ -153,7 +152,6 @@
 		512F378B27ED103D00877CBE /* Setter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setter.swift; sourceTree = "<group>"; };
 		512F378D27ED109700877CBE /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
 		512F378F27ED109F00877CBE /* SQLiteObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteObjc.m; sourceTree = "<group>"; };
-		512F379227ED10B600877CBE /* SQLiteObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteObjc.h; sourceTree = "<group>"; };
 		51316FE427FF8F5600D12A3E /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		513B3028282AEE9F00FE908C /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
 		513D5F7328070BA900E3AF37 /* ChatMessageModelDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatMessageModelDB.swift; path = AltuSDK/Core/DBManager/Model/ChatMessageModelDB.swift; sourceTree = SOURCE_ROOT; };
@@ -370,7 +368,6 @@
 		512F379127ED10A900877CBE /* include */ = {
 			isa = PBXGroup;
 			children = (
-				512F379227ED10B600877CBE /* SQLiteObjc.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -680,7 +677,6 @@
 			files = (
 				512F378E27ED109700877CBE /* fts3_tokenizer.h in Headers */,
 				512F377227ED0F9000877CBE /* SQLite.h in Headers */,
-				512F379327ED10B600877CBE /* SQLiteObjc.h in Headers */,
 				512F377427ED0F9900877CBE /* SQLiteObjc.h in Headers */,
 				51DCF0FC27ECF323009EDC03 /* AltuSDK.h in Headers */,
 			);
@@ -716,6 +712,7 @@
 				51DCF0F127ECF323009EDC03 /* Sources */,
 				51DCF0F227ECF323009EDC03 /* Frameworks */,
 				51DCF0F327ECF323009EDC03 /* Resources */,
+				96CC1FCED778E18938A6949E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -811,6 +808,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96CC1FCED778E18938A6949E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AltuSDK-AltuSDKTests/Pods-AltuSDK-AltuSDKTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AltuSDK-AltuSDKTests/Pods-AltuSDK-AltuSDKTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AltuSDK-AltuSDKTests/Pods-AltuSDK-AltuSDKTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F9BABD5F334394D4A1FE776F /* [CP] Check Pods Manifest.lock */ = {

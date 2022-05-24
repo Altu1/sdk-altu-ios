@@ -52,7 +52,7 @@ class ChatManager: ChatManagerType {
         self.widgetIdentifier = widgetIdentifier
         self.constants = ConstantsAltu.init()
         self.output = output
-        self.dBManager = AltuSDK.DBManager()
+        self.dBManager = DBManager()
         self.networkService = NetworkServiceFactory().makeNetworkService()
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.didReceiveMessage), name: NSNotification.Name(rawValue: "didReceiveMessage"), object: nil)

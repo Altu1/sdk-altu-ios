@@ -5,13 +5,13 @@ target 'AltuSDK' do
   # Pods for AltuSDK
   # Instalar os pods apenas quando for rodar os testes unitários, mas não comitar o SDK com os pods instalados
   use_frameworks!
-  # pod 'Starscream'
+  pod 'Starscream'
 
-	  target 'AltuSDKTests' do
+  target 'AltuSDKTests' do
       # Pods for AltuSDKTests
       # Instalar os pods apenas quando for rodar os testes unitários, mas não comitar o SDK com os pods instalados
-      # pod 'Starscream'
-	  end
+      pod 'Starscream'
+  end
 end
 
 

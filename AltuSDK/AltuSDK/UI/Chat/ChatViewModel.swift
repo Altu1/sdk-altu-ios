@@ -76,7 +76,7 @@ class ChatViewModel: NSObject, ChatViewModelType {
     
     init(config: D1AltuSdkConfig) {
         self.config = config
-        self.dBManager = AltuSDK.DBManager()
+        self.dBManager = DBManager()
     }
     
     func setup() {
