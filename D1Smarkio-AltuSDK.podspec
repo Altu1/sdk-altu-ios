@@ -17,7 +17,6 @@ Pod::Spec.new do |spec|
     spec.documentation_url = 'https://github.com/Altu1/sdk-altu-ios/blob/main/README.md'
     spec.source       = { 
       :git => 'https://github.com/Altu1/sdk-altu-ios.git',
-      :branch => 'main',
       :tag => spec.version.to_s 
     }
     spec.summary      = 'AltuSDK'
